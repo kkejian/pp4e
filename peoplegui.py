@@ -53,7 +53,9 @@ def updateRecord():
     db[key] = record
 
 
-db = shelve.open(shelvename)
-window = makeWidgets()
-window.mainloop()
-db.close()  # back here after quit or window close
+if __name__ == '__main__'
+    db = shelve.open(shelvename)
+    window = makeWidgets()
+    window.mainloop()
+    db.close()  # back here after quit or window close
+
