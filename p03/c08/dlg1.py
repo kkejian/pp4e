@@ -1,8 +1,9 @@
 from tkinter import *
 from tkinter.messagebox import *
 
+
 def callback():
-    if askyesnow('Verify', 'Do you really want to quit?'):
+    if askyesno('Verify', 'Do you really want to quit?'):
         showwarning('Yes', 'Quit not implemented')
     else:
         showinfo('No', ' Quit has been cancelled')
